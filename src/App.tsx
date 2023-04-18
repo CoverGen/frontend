@@ -1,5 +1,7 @@
+import Login from "./pages/Login";
+
 function App() {
-    return <div>Hellow CovGen Devsssf</div>;
+    return <Login />;
 }
 
 export default App;

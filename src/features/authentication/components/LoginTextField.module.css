@@ -1,0 +1,10 @@
+.user-input {
+    padding: 1rem;
+    font-family: inherit;
+    border: none;
+    background-color: #dcecec;
+}
+
+.user-input::placeholder {
+    color: #888;
+}
