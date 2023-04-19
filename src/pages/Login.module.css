@@ -1,12 +1,10 @@
 .container {
-    background-color: #dcecec;
+    background-color: var(--background-page-color-1);
     height: 100vh;
     position: relative;
 }
 
 .inner-container {
-    /* max-width: 100rem;
-    margin: 0 auto; */
     position: absolute;
     top: 50%;
     right: 50%;
@@ -17,7 +15,7 @@
     display: flex;
     font-size: 2rem;
     font-weight: 600;
-    color: #7e80a9;
+    color: var(--primary-color);
     align-items: center;
     gap: 1rem;
     position: absolute;

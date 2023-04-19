@@ -11,7 +11,7 @@
     background-color: white;
     padding: 5rem 8rem;
     border-radius: 2rem;
-    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.253);
+    box-shadow: 0 1.2rem 3.2rem var(--shadow-color-black);
 }
 
 .login-card a {
@@ -25,7 +25,7 @@
 
 .login-title {
     text-align: center;
-    color: #7e80a9;
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 3.2rem;
     margin-top: 3rem;

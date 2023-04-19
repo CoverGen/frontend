@@ -17,3 +17,11 @@ body {
     /* Only works if there is nothing absolutely positioned in relation to body */
     overflow-x: hidden;
 }
+
+:root {
+    --main-text-color: #555;
+    --primary-color: #7e80a9;
+    --background-page-color-1: #dcecec;
+    --placeholder-text-color: #888;
+    --shadow-color-black: rgba(0, 0, 0, 0.253);
+}
