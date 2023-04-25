@@ -1,0 +1,28 @@
+.container {
+    background-color: var(--background-page-color-1);
+    height: 100vh;
+    position: relative;
+}
+
+.inner-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.covergen {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+}
+
+.covergen img {
+    max-width: 3em;
+}

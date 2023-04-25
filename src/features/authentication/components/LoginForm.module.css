@@ -1,0 +1,36 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5rem 8rem;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3.2rem var(--shadow-color-black);
+}
+
+.login-card a {
+    color: inherit;
+}
+
+.help-text {
+    font-size: 1.5em;
+    margin-top: 3rem;
+}
+
+.login-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-top: 3rem;
+}
+img {
+    max-width: 11rem;
+    align-self: center;
+}
