@@ -1,16 +1,14 @@
 import classes from "./LoginTextField.module.css";
+import type { InputHTMLAttributes } from "react";
 
-type LoginTextFieldType = {
-    type: "email" | "password";
-};
-
-const LoginTextField = ({ type }: LoginTextFieldType) => {
-    const placeholder = type === "email" ? "Username" : "Password";
+const LoginTextField = (props: InputHTMLAttributes<HTMLInputElement>) => {
+    const placeholder = props.type === "email" ? "Username" : "Password";
     return (
         <input
-            type={type}
+            type={props.type}
             className={classes["user-input"]}
             placeholder={placeholder}
+            {...props}
         />
     );
 };
