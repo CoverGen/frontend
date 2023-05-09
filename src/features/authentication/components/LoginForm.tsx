@@ -6,20 +6,18 @@ import classes from "./LoginForm.module.css";
 import logo from "../../../assets/Logo.png";
 import { AuthServices } from "../services";
 import type { ILogin } from "../models/Login";
+import { AxiosError } from "axios";
 
 const LoginForm = () => {
     const [data, setData] = useState<ILogin>({ email: "", password: "" });
 
     const onLogin = async () => {
         const response = await AuthServices.logIn(data);
-        console.log(response);
-        if (response != "error") {
-            // TODO: Redirect to home page
-        }
+        if (response instanceof AxiosError) return;
+        // TODO: Handle redirect to home page with router here
     };
 
     const onChangeField = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log("something");
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
 

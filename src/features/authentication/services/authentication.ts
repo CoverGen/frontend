@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import type { ISignUp } from "../models/SignUp";
 import type { ILogin } from "../models/Login";
 
@@ -9,7 +9,6 @@ class AuthRequests {
     }
     async signUp(data: ISignUp) {
         let response;
-        console.log(data);
         try {
             response = await axios.post(`${this.baseUrl}/register/`, data);
             return response.data;
@@ -20,12 +19,11 @@ class AuthRequests {
 
     async logIn(data: ILogin) {
         let response;
-        console.log(data);
         try {
             response = await axios.post(`${this.baseUrl}/login/`, data);
             return response.data;
         } catch (e: unknown) {
-            return "error";
+            if (e instanceof AxiosError) return e.response?.data;
         }
     }
 }
