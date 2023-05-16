@@ -1,10 +1,12 @@
 import Button from "../../../components/Button";
+import type { ButtonHTMLAttributes } from "react";
 
-type LoginButtonPropsType = {
-    onClick: () => void;
-};
+interface ILoginButtonPropsType
+    extends ButtonHTMLAttributes<HTMLButtonElement> {
+    onClick: () => Promise<void>;
+}
 
-const LoginButton = ({ onClick }: LoginButtonPropsType) => {
+const LoginButton = ({ onClick }: ILoginButtonPropsType) => {
     return (
         <div onClick={onClick}>
             <Button title="Login" />
