@@ -2,9 +2,9 @@
     padding: 1rem;
     font-family: inherit;
     border: none;
-    background-color: var(--background-page-color-1);
+    background-color: var(--sl-color-neutral3);
 }
 
 .user-input::placeholder {
-    color: var(--placeholder-text-color);
+    color: var(--sl-color-acce1);
 }

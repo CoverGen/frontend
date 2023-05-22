@@ -19,13 +19,14 @@
 }
 
 .help-text {
+    color: var(--sl-color-acce1);
     font-size: 1.5em;
     margin-top: 3rem;
 }
 
 .login-title {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--sl-color-acce1);
     font-weight: 500;
     font-size: 3.2rem;
     margin-top: 3rem;
