@@ -1,12 +1,12 @@
 .button {
-    background-color: var(--primary-color);
+    background-color: var(--color-acce2);
     padding: 1em;
     border-radius: 1em;
 }
 
 .button-text {
     font-size: 1.6em;
-    color: white;
+    color: var(--color-neutral1);
     font-weight: 300;
     text-align: center;
 }
