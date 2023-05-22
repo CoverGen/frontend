@@ -1,0 +1,44 @@
+/* Light Theme of Application */
+
+:root,
+:host,
+.cvg-theme-light {
+  color-scheme: light;
+
+  /* Accent */
+  --sl-color-acce1: #262523;
+  --sl-color-acce2: #0060ff;
+  --sl-color-acce2h: #4a8fff;
+  --sl-color-acce2a: #00358c;
+
+  /* Neutral */
+  --sl-color-neutral1: #ffffff;
+  --sl-color-neutral2: #fafafa;
+  --sl-color-neutral3: #f5f5f5;
+  --sl-color-neutral4: #e6e6e6;
+  --sl-color-neutral5: #999999;
+  --sl-color-neutral6: #6f6f6f;
+  --sl-color-neutral7: #373737;
+
+  /* Semantic */
+  --sl-color-sema1: #ffd377;
+  --sl-color-sema2: #c62828;
+  --sl-color-sema2h: #c66161;
+  --sl-color-sema2a: #801919;
+  --sl-color-sema3: #84b98b;
+  --sl-color-sema4: #df7c20;
+  --sl-color-sema5: #7b6aa9;
+  --sl-color-sema6: #2d78c1;
+
+  /* Support */
+  --sl-color-supp1: #0e8385;
+  --sl-color-supp2: #734b6d;
+  --sl-color-supp3: #4e7599;
+  --sl-color-supp4: #4421af;
+  --sl-color-supp5: #546b6b;
+  --sl-color-supp6: #8c564b;
+  --sl-color-supp7: #c6263a;
+  --sl-color-supp8: #c94081;
+  --sl-color-supp9: #946f18;
+  --sl-color-supp10: #ad603a;
+}
