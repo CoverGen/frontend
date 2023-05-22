@@ -7,16 +7,22 @@ import logo from "../../../assets/Logo.png";
 import { AuthServices } from "../services";
 import type { ILogin } from "../models/Login";
 import { AxiosError } from "axios";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
+    const navigate = useNavigate();
     const [data, setData] = useState<ILogin>({ email: "", password: "" });
-
     const onLogin = async () => {
         const response = await AuthServices.logIn(data);
-        if (response instanceof AxiosError) return;
-        // TODO: Handle redirect to home page with router here
+        if (response instanceof AxiosError)
+            // -- error in login
+            // console.log(response.response?.data);
+            return;
+        // -- success in login
+        // save the "email" response in localStorage, and navigate to "/"
+        localStorage.setItem("email", response.email);
+        navigate("/");
     };
-
     const onChangeField = (e: React.ChangeEvent<HTMLInputElement>) => {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
