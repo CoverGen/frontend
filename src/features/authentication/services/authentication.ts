@@ -1,7 +1,6 @@
 import axios, { AxiosError } from "axios";
 import type { ISignUp } from "../models/SignUp";
 import type { ILogin } from "../models/Login";
-
 class AuthRequests {
     baseUrl: string;
     constructor(url: string) {
@@ -16,16 +15,16 @@ class AuthRequests {
             return "error";
         }
     }
-
     async logIn(data: ILogin) {
         let response;
         try {
             response = await axios.post(`${this.baseUrl}/login/`, data);
             return response.data;
         } catch (e: unknown) {
-            if (e instanceof AxiosError) return e.response?.data;
+            // (OLD) if (e instanceof AxiosError) return e.response?.data;
+            // return the error entirely to be evaluated
+            if (e instanceof AxiosError) return e;
         }
     }
 }
-
 export default AuthRequests;
